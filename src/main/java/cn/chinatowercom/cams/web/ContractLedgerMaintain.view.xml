@@ -1,0 +1,835 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ViewConfig>
+  <Arguments/>
+  <Context/>
+  <Model>
+    <DataType name="ContractLedger">
+      <Property name="creationType">cn.chinatowercom.cams.domain.ContractLedger</Property>
+      <PropertyDef name="id">
+        <Property></Property>
+      </PropertyDef>
+      <PropertyDef name="prefectureLevel">
+        <Property></Property>
+        <Property name="label">地市</Property>
+      </PropertyDef>
+      <PropertyDef name="county">
+        <Property></Property>
+        <Property name="label">区县</Property>
+      </PropertyDef>
+      <PropertyDef name="siteCode">
+        <Property></Property>
+        <Property name="label">站址编码</Property>
+      </PropertyDef>
+      <PropertyDef name="physicsSiteCode">
+        <Property></Property>
+        <Property name="label">物理站址编码</Property>
+      </PropertyDef>
+      <PropertyDef name="siteName">
+        <Property></Property>
+        <Property name="label">站址名称</Property>
+      </PropertyDef>
+      <PropertyDef name="injectionType">
+        <Property></Property>
+        <Property name="label">注资类型</Property>
+      </PropertyDef>
+      <PropertyDef name="originalPropertyUnits">
+        <Property></Property>
+        <Property name="label">原产权单位</Property>
+      </PropertyDef>
+      <PropertyDef name="Sharing">
+        <Property></Property>
+        <Property name="label">共享情况</Property>
+      </PropertyDef>
+      <PropertyDef name="mobileName">
+        <Property></Property>
+        <Property name="label">移动名称</Property>
+      </PropertyDef>
+      <PropertyDef name="unicomName">
+        <Property></Property>
+        <Property name="label">联通名称</Property>
+      </PropertyDef>
+      <PropertyDef name="telecomName">
+        <Property></Property>
+        <Property name="label">电信名称</Property>
+      </PropertyDef>
+      <PropertyDef name="siteLevel">
+        <Property></Property>
+        <Property name="label">站点级别</Property>
+      </PropertyDef>
+      <PropertyDef name="area">
+        <Property></Property>
+        <Property name="label">片区</Property>
+      </PropertyDef>
+      <PropertyDef name="longitude">
+        <Property name="dataType">BigDecimal</Property>
+        <Property name="label">经度</Property>
+      </PropertyDef>
+      <PropertyDef name="latitude">
+        <Property name="dataType">BigDecimal</Property>
+        <Property name="label">纬度</Property>
+      </PropertyDef>
+      <PropertyDef name="baseAddress">
+        <Property></Property>
+        <Property name="label">基站地址</Property>
+      </PropertyDef>
+      <PropertyDef name="constructionScene">
+        <Property></Property>
+        <Property name="label">建设场景</Property>
+      </PropertyDef>
+      <PropertyDef name="leasingType">
+        <Property></Property>
+        <Property name="label">租赁类型</Property>
+      </PropertyDef>
+      <PropertyDef name="powerSupplyMode">
+        <Property></Property>
+        <Property name="label">供电方式</Property>
+      </PropertyDef>
+      <PropertyDef name="powerSupplyOwner">
+        <Property></Property>
+        <Property name="label">供电业主</Property>
+      </PropertyDef>
+      <PropertyDef name="powerSupplyOwnerContact">
+        <Property></Property>
+        <Property name="label">供电业主联系方式</Property>
+      </PropertyDef>
+      <PropertyDef name="powerSupplyPayPeriod">
+        <Property></Property>
+        <Property name="label">供电结算周期</Property>
+      </PropertyDef>
+      <PropertyDef name="hasContractScanning">
+        <Property name="dataType">boolean</Property>
+        <Property name="label">是否有合同扫描件</Property>
+      </PropertyDef>
+      <PropertyDef name="leasingOwnner">
+        <Property></Property>
+        <Property name="label">租赁业主</Property>
+      </PropertyDef>
+      <PropertyDef name="contacts">
+        <Property></Property>
+        <Property name="label">联系人</Property>
+      </PropertyDef>
+      <PropertyDef name="contactNumber">
+        <Property></Property>
+        <Property name="label">联系电话</Property>
+      </PropertyDef>
+      <PropertyDef name="certificateNo">
+        <Property></Property>
+        <Property name="label">证件号</Property>
+      </PropertyDef>
+      <PropertyDef name="ownnerCollectionAccount">
+        <Property></Property>
+        <Property name="label">业主收款账号</Property>
+      </PropertyDef>
+      <PropertyDef name="ownnerCollectionAccountName">
+        <Property></Property>
+        <Property name="label">业主收款户名</Property>
+      </PropertyDef>
+      <PropertyDef name="ownnerCollectionOpeningBank">
+        <Property></Property>
+        <Property name="label">业主收款开户行</Property>
+      </PropertyDef>
+      <PropertyDef name="leasingPlaceArea">
+        <Property></Property>
+        <Property name="label">租赁场地面积（平方米）</Property>
+      </PropertyDef>
+      <PropertyDef name="leasingHouseArea">
+        <Property></Property>
+        <Property name="label">租赁房屋面积（平方米）</Property>
+      </PropertyDef>
+      <PropertyDef name="contractStartDate">
+        <Property name="dataType">Date</Property>
+        <Property name="label">合同起始日期</Property>
+      </PropertyDef>
+      <PropertyDef name="contractEndDate">
+        <Property name="dataType">Date</Property>
+        <Property name="label">合同结束日期</Property>
+      </PropertyDef>
+      <PropertyDef name="cashPledge">
+        <Property name="dataType">Integer</Property>
+        <Property name="label">押金</Property>
+      </PropertyDef>
+      <PropertyDef name="annualRent">
+        <Property name="dataType">Integer</Property>
+        <Property name="label">年租金（元/年）</Property>
+      </PropertyDef>
+      <PropertyDef name="contractAmount">
+        <Property name="dataType">Integer</Property>
+        <Property name="label">合同金额</Property>
+      </PropertyDef>
+      <PropertyDef name="rentPlusTax">
+        <Property name="dataType">boolean</Property>
+        <Property name="label">租金是否含税</Property>
+      </PropertyDef>
+      <PropertyDef name="rentPayment">
+        <Property></Property>
+        <Property name="label">租金支付方式</Property>
+      </PropertyDef>
+      <PropertyDef name="rentPaymentCycle">
+        <Property></Property>
+        <Property name="label">租金支付周期</Property>
+      </PropertyDef>
+      <PropertyDef name="rentPaymentEffectiveDate">
+        <Property name="dataType">Date</Property>
+        <Property name="label">租金支付有效日期</Property>
+      </PropertyDef>
+      <PropertyDef name="expectedNextPaymentDate">
+        <Property name="dataType">Date</Property>
+        <Property name="label">预计下期缴纳日期</Property>
+      </PropertyDef>
+      <PropertyDef name="expectedNextPaymentAmount">
+        <Property name="dataType">Integer</Property>
+        <Property name="label">预计下期缴纳金额</Property>
+      </PropertyDef>
+      <PropertyDef name="renewLevel">
+        <Property></Property>
+        <Property name="label">续签等级</Property>
+      </PropertyDef>
+      <PropertyDef name="otherElectricityAgreement">
+        <Property name="dataType">boolean</Property>
+        <Property name="label">是否另签用电协议</Property>
+      </PropertyDef>
+      <PropertyDef name="renewContractAgent">
+        <Property></Property>
+        <Property name="label">续签合同经办人</Property>
+      </PropertyDef>
+      <PropertyDef name="renewContractCode">
+        <Property></Property>
+        <Property name="label">续签合同编号</Property>
+      </PropertyDef>
+      <PropertyDef name="renewContractName">
+        <Property></Property>
+        <Property name="label">续签合同名称</Property>
+      </PropertyDef>
+      <PropertyDef name="talker">
+        <Property></Property>
+        <Property name="label">谈点人</Property>
+      </PropertyDef>
+      <PropertyDef name="locatePaymentInfoRemark">
+        <Property></Property>
+        <Property name="label">选址支付信息备注</Property>
+      </PropertyDef>
+    </DataType>
+  </Model>
+  <View layout="padding:15">
+    <Property name="packages">font-awesome,colors</Property>
+    <DataSet id="dsContractLedger">
+      <Property name="dataProvider">contractLedgerController#load</Property>
+      <Property name="dataType">[ContractLedger]</Property>
+      <Property name="pageSize">20</Property>
+    </DataSet>
+    <Panel layout="padding:10;regionPadding:5">
+      <Buttons/>
+      <Children>
+        <ToolBar>
+          <DataPilot>
+            <ClientEvent name="onSubControlAction" signature="self,arg,dsContractLedger,updateAction,dialogContractLedger">if (arg.code === &quot;+&quot;) {
+	dialogContractLedger.show();
+} else if (arg.code === &quot;-&quot;) {
+	dorado.MessageBox.confirm(&quot;确定要删除当前台账信息？&quot;, function() {
+		dsContractLedger.getData(&quot;#&quot;).remove();
+		updateAction.execute();
+	});
+}
+
+</ClientEvent>
+            <Property name="dataSet">dsContractLedger</Property>
+            <Property name="itemCodes">+,-</Property>
+          </DataPilot>
+          <ToolBarButton>
+            <ClientEvent name="onClick" signature="self,arg,dialogContractLedger">dialogContractLedger.show()
+</ClientEvent>
+            <Property name="caption">修改</Property>
+            <Property name="iconClass">fa fa-pencil</Property>
+          </ToolBarButton>
+          <Fill/>
+          <TextEditor>
+            <ClientEvent name="onKeyDown" signature="self,arg,dg">if (arg.keyCode === 13) {
+	return;
+}
+window.clearTimeout(self.queryTimeout);
+self.queryTimeout = window.setTimeout(function() {
+	var key = self.get(&quot;value&quot;);
+	if (!key) {
+		dg.filter();
+	} else {
+		dg.filter([{
+			junction: &quot;or&quot;,
+			criterions: [{
+				property: &quot;siteCode&quot;,
+				operator: &quot;like&quot;,
+				value: key
+			}, {
+				property: &quot;physicsSiteCode&quot;,
+				operator: &quot;like&quot;,
+				value: key
+			}, {
+				property: &quot;siteName&quot;,
+				operator: &quot;like&quot;,
+				value: key
+			}]
+		}]);
+	}
+}, 250);</ClientEvent>
+            <Property name="trigger">triggerClear</Property>
+            <Property name="blankText">按站址编码和名称搜索</Property>
+          </TextEditor>
+          <ToolBarButton>
+            <ClientEvent name="onClick" signature="self,arg,dg">if (self.get(&quot;caption&quot;) === &quot;显示过滤工具栏&quot;) {
+	dg.set(&quot;showFilterBar&quot;, true);
+	self.set({
+		caption: &quot;隐藏过滤工具栏&quot;,
+		iconClass: &quot;fa fa-eye-slash blue-text&quot;
+	});
+} else {
+	dg.set(&quot;showFilterBar&quot;, false);
+	self.set({
+		caption: &quot;显示过滤工具栏&quot;,
+		iconClass: &quot;fa fa-eye blue-text&quot;
+	});
+}
+</ClientEvent>
+            <Property name="caption">显示过滤工具栏</Property>
+            <Property name="iconClass">fa fa-eye blue-text</Property>
+          </ToolBarButton>
+          <Separator/>
+          <ToolBarButton>
+            <Property name="caption">导入</Property>
+            <Property name="iconClass">fa fa-sign-in blue-text</Property>
+            <Property name="action">uploadAction</Property>
+          </ToolBarButton>
+          <ToolBarButton>
+            <Property name="caption">导出</Property>
+            <Property name="iconClass">fa fa-file-excel-o blue-text</Property>
+            <Property name="action">exportAction</Property>
+          </ToolBarButton>
+        </ToolBar>
+        <DataGrid id="dg">
+          <Property name="dataSet">dsContractLedger</Property>
+          <Property name="filterMode">serverSide</Property>
+          <Property name="fixedColumnCount">2</Property>
+          <Property name="readOnly">true</Property>
+          <RowNumColumn/>
+          <DataColumn name="prefectureLevel">
+            <Property name="property">prefectureLevel</Property>
+            <Property name="width">160</Property>
+          </DataColumn>
+          <DataColumn name="county">
+            <Property name="property">county</Property>
+            <Property name="width">160</Property>
+          </DataColumn>
+          <DataColumn name="siteCode">
+            <Property name="property">siteCode</Property>
+            <Property name="width">160</Property>
+          </DataColumn>
+          <DataColumn name="physicsSiteCode">
+            <Property name="property">physicsSiteCode</Property>
+            <Property name="width">160</Property>
+          </DataColumn>
+          <DataColumn name="siteName">
+            <Property name="property">siteName</Property>
+            <Property name="width">160</Property>
+          </DataColumn>
+          <DataColumn name="injectionType">
+            <Property name="property">injectionType</Property>
+            <Property name="width">160</Property>
+          </DataColumn>
+          <DataColumn name="originalPropertyUnits">
+            <Property name="property">originalPropertyUnits</Property>
+            <Property name="width">160</Property>
+          </DataColumn>
+          <DataColumn name="Sharing">
+            <Property name="property">Sharing</Property>
+            <Property name="width">160</Property>
+          </DataColumn>
+          <DataColumn name="mobileName">
+            <Property name="property">mobileName</Property>
+            <Property name="width">160</Property>
+          </DataColumn>
+          <DataColumn name="unicomName">
+            <Property name="property">unicomName</Property>
+            <Property name="width">160</Property>
+          </DataColumn>
+          <DataColumn name="telecomName">
+            <Property name="property">telecomName</Property>
+            <Property name="width">160</Property>
+          </DataColumn>
+          <DataColumn name="siteLevel">
+            <Property name="property">siteLevel</Property>
+            <Property name="width">160</Property>
+          </DataColumn>
+          <DataColumn name="area">
+            <Property name="property">area</Property>
+            <Property name="width">160</Property>
+          </DataColumn>
+          <DataColumn name="longitude">
+            <Property name="property">longitude</Property>
+            <Property name="width">160</Property>
+          </DataColumn>
+          <DataColumn name="latitude">
+            <Property name="property">latitude</Property>
+            <Property name="width">160</Property>
+          </DataColumn>
+          <DataColumn name="baseAddress">
+            <Property name="property">baseAddress</Property>
+            <Property name="width">160</Property>
+          </DataColumn>
+          <DataColumn name="constructionScene">
+            <Property name="property">constructionScene</Property>
+            <Property name="width">160</Property>
+          </DataColumn>
+          <DataColumn name="leasingType">
+            <Property name="property">leasingType</Property>
+            <Property name="width">160</Property>
+          </DataColumn>
+          <DataColumn name="powerSupplyMode">
+            <Property name="property">powerSupplyMode</Property>
+            <Property name="width">160</Property>
+          </DataColumn>
+          <DataColumn name="powerSupplyOwner">
+            <Property name="property">powerSupplyOwner</Property>
+            <Property name="width">160</Property>
+          </DataColumn>
+          <DataColumn name="powerSupplyOwnerContact">
+            <Property name="property">powerSupplyOwnerContact</Property>
+            <Property name="width">160</Property>
+          </DataColumn>
+          <DataColumn name="powerSupplyPayPeriod">
+            <Property name="property">powerSupplyPayPeriod</Property>
+            <Property name="width">160</Property>
+          </DataColumn>
+          <DataColumn name="hasContractScanning">
+            <Property name="property">hasContractScanning</Property>
+            <Property name="width">160</Property>
+          </DataColumn>
+          <DataColumn name="leasingOwnner">
+            <Property name="property">leasingOwnner</Property>
+            <Property name="width">160</Property>
+          </DataColumn>
+          <DataColumn name="contacts">
+            <Property name="property">contacts</Property>
+            <Property name="width">160</Property>
+          </DataColumn>
+          <DataColumn name="contactNumber">
+            <Property name="property">contactNumber</Property>
+            <Property name="width">160</Property>
+          </DataColumn>
+          <DataColumn name="certificateNo">
+            <Property name="property">certificateNo</Property>
+            <Property name="width">160</Property>
+          </DataColumn>
+          <DataColumn name="ownnerCollectionAccount">
+            <Property name="property">ownnerCollectionAccount</Property>
+            <Property name="width">160</Property>
+          </DataColumn>
+          <DataColumn name="ownnerCollectionAccountName">
+            <Property name="property">ownnerCollectionAccountName</Property>
+            <Property name="width">160</Property>
+          </DataColumn>
+          <DataColumn name="ownnerCollectionOpeningBank">
+            <Property name="property">ownnerCollectionOpeningBank</Property>
+            <Property name="width">160</Property>
+          </DataColumn>
+          <DataColumn name="leasingPlaceArea">
+            <Property name="property">leasingPlaceArea</Property>
+            <Property name="width">160</Property>
+          </DataColumn>
+          <DataColumn name="leasingHouseArea">
+            <Property name="property">leasingHouseArea</Property>
+            <Property name="width">160</Property>
+          </DataColumn>
+          <DataColumn name="contractStartDate">
+            <Property name="property">contractStartDate</Property>
+            <Property name="width">160</Property>
+          </DataColumn>
+          <DataColumn name="contractEndDate">
+            <Property name="property">contractEndDate</Property>
+            <Property name="width">160</Property>
+          </DataColumn>
+          <DataColumn name="cashPledge">
+            <Property name="property">cashPledge</Property>
+            <Property name="width">160</Property>
+          </DataColumn>
+          <DataColumn name="annualRent">
+            <Property name="property">annualRent</Property>
+            <Property name="width">160</Property>
+          </DataColumn>
+          <DataColumn name="contractAmount">
+            <Property name="property">contractAmount</Property>
+            <Property name="width">160</Property>
+          </DataColumn>
+          <DataColumn name="rentPlusTax">
+            <Property name="property">rentPlusTax</Property>
+            <Property name="width">160</Property>
+          </DataColumn>
+          <DataColumn name="rentPayment">
+            <Property name="property">rentPayment</Property>
+            <Property name="width">160</Property>
+          </DataColumn>
+          <DataColumn name="rentPaymentCycle">
+            <Property name="property">rentPaymentCycle</Property>
+            <Property name="width">160</Property>
+          </DataColumn>
+          <DataColumn name="rentPaymentEffectiveDate">
+            <Property name="property">rentPaymentEffectiveDate</Property>
+            <Property name="width">160</Property>
+          </DataColumn>
+          <DataColumn name="expectedNextPaymentDate">
+            <Property name="property">expectedNextPaymentDate</Property>
+            <Property name="width">160</Property>
+          </DataColumn>
+          <DataColumn name="expectedNextPaymentAmount">
+            <Property name="property">expectedNextPaymentAmount</Property>
+            <Property name="width">160</Property>
+          </DataColumn>
+          <DataColumn name="renewLevel">
+            <Property name="property">renewLevel</Property>
+            <Property name="width">160</Property>
+          </DataColumn>
+          <DataColumn name="otherElectricityAgreement">
+            <Property name="property">otherElectricityAgreement</Property>
+            <Property name="width">160</Property>
+          </DataColumn>
+          <DataColumn name="renewContractAgent">
+            <Property name="property">renewContractAgent</Property>
+            <Property name="width">160</Property>
+          </DataColumn>
+          <DataColumn name="renewContractCode">
+            <Property name="property">renewContractCode</Property>
+            <Property name="width">160</Property>
+          </DataColumn>
+          <DataColumn name="renewContractName">
+            <Property name="property">renewContractName</Property>
+            <Property name="width">160</Property>
+          </DataColumn>
+          <DataColumn name="talker">
+            <Property name="property">talker</Property>
+            <Property name="width">160</Property>
+          </DataColumn>
+          <DataColumn name="locatePaymentInfoRemark">
+            <Property name="property">locatePaymentInfoRemark</Property>
+            <Property name="width">160</Property>
+          </DataColumn>
+        </DataGrid>
+        <ToolBar layoutConstraint="bottom">
+          <DataPilot>
+            <Property name="dataSet">dsContractLedger</Property>
+            <Property name="itemCodes">pages,pageSize</Property>
+          </DataPilot>
+        </ToolBar>
+      </Children>
+      <Tools/>
+    </Panel>
+    <UpdateAction id="updateAction">
+      <ClientEvent name="onSuccess" signature="self,arg,dialogContractLedger">dialogContractLedger.hide();
+</ClientEvent>
+      <Property name="dataResolver">contractLedgerController#save</Property>
+      <Property name="executingMessage">正在执行……</Property>
+      <Property name="successMessage">保存成功。</Property>
+      <UpdateItem>
+        <Property name="dataSet">dsContractLedger</Property>
+      </UpdateItem>
+    </UpdateAction>
+    <Dialog id="dialogContractLedger">
+      <ClientEvent name="onHide" signature="self,arg,dsContractLedger">dsContractLedger.getData().cancel();
+</ClientEvent>
+      <Property name="caption">台账信息维护</Property>
+      <Property name="width">800</Property>
+      <Property name="height">95%</Property>
+      <Buttons>
+        <Button>
+          <Property name="caption">保存</Property>
+          <Property name="action">updateAction</Property>
+          <Property name="width">80</Property>
+          <Property name="ui">highlight</Property>
+        </Button>
+        <Button>
+          <ClientEvent name="onClick">self.get(&quot;parent&quot;).hide();
+</ClientEvent>
+          <Property name="caption">取消</Property>
+          <Property name="width">80</Property>
+        </Button>
+      </Buttons>
+      <Children>
+        <AutoForm>
+          <Property name="dataSet">dsContractLedger</Property>
+          <Property name="labelWidth">150</Property>
+          <AutoFormElement>
+            <Property name="name">prefectureLevel</Property>
+            <Property name="property">prefectureLevel</Property>
+            <Editor/>
+          </AutoFormElement>
+          <AutoFormElement>
+            <Property name="name">county</Property>
+            <Property name="property">county</Property>
+            <Editor/>
+          </AutoFormElement>
+          <AutoFormElement>
+            <Property name="name">siteCode</Property>
+            <Property name="property">siteCode</Property>
+            <Editor/>
+          </AutoFormElement>
+          <AutoFormElement>
+            <Property name="name">physicsSiteCode</Property>
+            <Property name="property">physicsSiteCode</Property>
+            <Editor/>
+          </AutoFormElement>
+          <AutoFormElement>
+            <Property name="name">siteName</Property>
+            <Property name="property">siteName</Property>
+            <Editor/>
+          </AutoFormElement>
+          <AutoFormElement>
+            <Property name="name">injectionType</Property>
+            <Property name="property">injectionType</Property>
+            <Editor/>
+          </AutoFormElement>
+          <AutoFormElement>
+            <Property name="name">originalPropertyUnits</Property>
+            <Property name="property">originalPropertyUnits</Property>
+            <Editor/>
+          </AutoFormElement>
+          <AutoFormElement>
+            <Property name="name">Sharing</Property>
+            <Property name="property">Sharing</Property>
+            <Editor/>
+          </AutoFormElement>
+          <AutoFormElement>
+            <Property name="name">mobileName</Property>
+            <Property name="property">mobileName</Property>
+            <Editor/>
+          </AutoFormElement>
+          <AutoFormElement>
+            <Property name="name">unicomName</Property>
+            <Property name="property">unicomName</Property>
+            <Editor/>
+          </AutoFormElement>
+          <AutoFormElement>
+            <Property name="name">telecomName</Property>
+            <Property name="property">telecomName</Property>
+            <Editor/>
+          </AutoFormElement>
+          <AutoFormElement>
+            <Property name="name">siteLevel</Property>
+            <Property name="property">siteLevel</Property>
+            <Editor/>
+          </AutoFormElement>
+          <AutoFormElement>
+            <Property name="name">area</Property>
+            <Property name="property">area</Property>
+            <Editor/>
+          </AutoFormElement>
+          <AutoFormElement>
+            <Property name="name">longitude</Property>
+            <Property name="property">longitude</Property>
+            <Editor/>
+          </AutoFormElement>
+          <AutoFormElement>
+            <Property name="name">latitude</Property>
+            <Property name="property">latitude</Property>
+            <Editor/>
+          </AutoFormElement>
+          <AutoFormElement>
+            <Property name="name">baseAddress</Property>
+            <Property name="property">baseAddress</Property>
+            <Editor/>
+          </AutoFormElement>
+          <AutoFormElement>
+            <Property name="name">constructionScene</Property>
+            <Property name="property">constructionScene</Property>
+            <Editor/>
+          </AutoFormElement>
+          <AutoFormElement>
+            <Property name="name">leasingType</Property>
+            <Property name="property">leasingType</Property>
+            <Editor/>
+          </AutoFormElement>
+          <AutoFormElement>
+            <Property name="name">powerSupplyMode</Property>
+            <Property name="property">powerSupplyMode</Property>
+            <Editor/>
+          </AutoFormElement>
+          <AutoFormElement>
+            <Property name="name">powerSupplyOwner</Property>
+            <Property name="property">powerSupplyOwner</Property>
+            <Editor/>
+          </AutoFormElement>
+          <AutoFormElement>
+            <Property name="name">powerSupplyOwnerContact</Property>
+            <Property name="property">powerSupplyOwnerContact</Property>
+            <Editor/>
+          </AutoFormElement>
+          <AutoFormElement>
+            <Property name="name">powerSupplyPayPeriod</Property>
+            <Property name="property">powerSupplyPayPeriod</Property>
+            <Editor/>
+          </AutoFormElement>
+          <AutoFormElement>
+            <Property name="name">hasContractScanning</Property>
+            <Property name="property">hasContractScanning</Property>
+            <Editor/>
+          </AutoFormElement>
+          <AutoFormElement>
+            <Property name="name">leasingOwnner</Property>
+            <Property name="property">leasingOwnner</Property>
+            <Editor/>
+          </AutoFormElement>
+          <AutoFormElement>
+            <Property name="name">contacts</Property>
+            <Property name="property">contacts</Property>
+            <Editor/>
+          </AutoFormElement>
+          <AutoFormElement>
+            <Property name="name">contactNumber</Property>
+            <Property name="property">contactNumber</Property>
+            <Editor/>
+          </AutoFormElement>
+          <AutoFormElement>
+            <Property name="name">certificateNo</Property>
+            <Property name="property">certificateNo</Property>
+            <Editor/>
+          </AutoFormElement>
+          <AutoFormElement>
+            <Property name="name">ownnerCollectionAccount</Property>
+            <Property name="property">ownnerCollectionAccount</Property>
+            <Editor/>
+          </AutoFormElement>
+          <AutoFormElement>
+            <Property name="name">ownnerCollectionAccountName</Property>
+            <Property name="property">ownnerCollectionAccountName</Property>
+            <Editor/>
+          </AutoFormElement>
+          <AutoFormElement>
+            <Property name="name">ownnerCollectionOpeningBank</Property>
+            <Property name="property">ownnerCollectionOpeningBank</Property>
+            <Editor/>
+          </AutoFormElement>
+          <AutoFormElement>
+            <Property name="name">leasingPlaceArea</Property>
+            <Property name="property">leasingPlaceArea</Property>
+            <Editor/>
+          </AutoFormElement>
+          <AutoFormElement>
+            <Property name="name">leasingHouseArea</Property>
+            <Property name="property">leasingHouseArea</Property>
+            <Editor/>
+          </AutoFormElement>
+          <AutoFormElement>
+            <Property name="name">contractStartDate</Property>
+            <Property name="property">contractStartDate</Property>
+            <Editor/>
+          </AutoFormElement>
+          <AutoFormElement>
+            <Property name="name">contractEndDate</Property>
+            <Property name="property">contractEndDate</Property>
+            <Editor/>
+          </AutoFormElement>
+          <AutoFormElement>
+            <Property name="name">cashPledge</Property>
+            <Property name="property">cashPledge</Property>
+            <Editor/>
+          </AutoFormElement>
+          <AutoFormElement>
+            <Property name="name">annualRent</Property>
+            <Property name="property">annualRent</Property>
+            <Editor/>
+          </AutoFormElement>
+          <AutoFormElement>
+            <Property name="name">contractAmount</Property>
+            <Property name="property">contractAmount</Property>
+            <Editor/>
+          </AutoFormElement>
+          <AutoFormElement>
+            <Property name="name">rentPlusTax</Property>
+            <Property name="property">rentPlusTax</Property>
+            <Editor/>
+          </AutoFormElement>
+          <AutoFormElement>
+            <Property name="name">rentPayment</Property>
+            <Property name="property">rentPayment</Property>
+            <Editor/>
+          </AutoFormElement>
+          <AutoFormElement>
+            <Property name="name">rentPaymentCycle</Property>
+            <Property name="property">rentPaymentCycle</Property>
+            <Editor/>
+          </AutoFormElement>
+          <AutoFormElement>
+            <Property name="name">rentPaymentEffectiveDate</Property>
+            <Property name="property">rentPaymentEffectiveDate</Property>
+            <Editor/>
+          </AutoFormElement>
+          <AutoFormElement>
+            <Property name="name">expectedNextPaymentDate</Property>
+            <Property name="property">expectedNextPaymentDate</Property>
+            <Editor/>
+          </AutoFormElement>
+          <AutoFormElement>
+            <Property name="name">expectedNextPaymentAmount</Property>
+            <Property name="property">expectedNextPaymentAmount</Property>
+            <Editor/>
+          </AutoFormElement>
+          <AutoFormElement>
+            <Property name="name">renewLevel</Property>
+            <Property name="property">renewLevel</Property>
+            <Editor/>
+          </AutoFormElement>
+          <AutoFormElement>
+            <Property name="name">otherElectricityAgreement</Property>
+            <Property name="property">otherElectricityAgreement</Property>
+            <Editor/>
+          </AutoFormElement>
+          <AutoFormElement>
+            <Property name="name">renewContractAgent</Property>
+            <Property name="property">renewContractAgent</Property>
+            <Editor/>
+          </AutoFormElement>
+          <AutoFormElement>
+            <Property name="name">renewContractCode</Property>
+            <Property name="property">renewContractCode</Property>
+            <Editor/>
+          </AutoFormElement>
+          <AutoFormElement>
+            <Property name="name">renewContractName</Property>
+            <Property name="property">renewContractName</Property>
+            <Editor/>
+          </AutoFormElement>
+          <AutoFormElement>
+            <Property name="name">talker</Property>
+            <Property name="property">talker</Property>
+            <Editor/>
+          </AutoFormElement>
+          <AutoFormElement>
+            <Property name="name">locatePaymentInfoRemark</Property>
+            <Property name="property">locatePaymentInfoRemark</Property>
+            <Editor/>
+          </AutoFormElement>
+        </AutoForm>
+      </Children>
+      <Tools/>
+    </Dialog>
+    <Export2ReportAction id="exportAction">
+      <Property name="template">dg</Property>
+      <Property name="dataScope">serverAll</Property>
+      <Property name="executingMessage">正在导出……</Property>
+      <Property name="successMessage">台账数据导出成功。</Property>
+      <Property name="extension">xlsx</Property>
+      <Property name="maxSize">10000</Property>
+      <Property name="fileName">contract-ledger-data</Property>
+    </Export2ReportAction>
+    <UploadAction id="uploadAction">
+      <ClientEvent name="beforeFileUpload">self.set(&quot;parameter&quot;, {
+	importerSolutionId: &quot;contract-ledger-data&quot;,
+    startRow:3
+});
+</ClientEvent>
+      <Property name="fileResolver">importer.excelUploadFileProcessor#upload</Property>
+      <Property name="parameter">
+        <Entity>
+          <Property name="importerSolutionId">contract-ledger-data</Property>
+          <Property name="startRow">3</Property>
+        </Entity>
+      </Property>
+      <Filters/>
+    </UploadAction>
+  </View>
+</ViewConfig>
