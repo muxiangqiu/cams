@@ -14,3 +14,7 @@ hs_err_pid*
 
 /target/
 /.settings/
+
+.DS_Store
+.project
+.rules
