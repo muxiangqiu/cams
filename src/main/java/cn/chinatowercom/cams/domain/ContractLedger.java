@@ -3,7 +3,6 @@ package cn.chinatowercom.cams.domain;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
-import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -11,8 +10,9 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
-import javax.persistence.Transient;
 
+import com.bstek.bdf3.dorado.jpa.annotation.Generator;
+import com.bstek.bdf3.dorado.jpa.policy.impl.CreatedDatePolicy;
 import com.bstek.dorado.annotation.PropertyDef;
 
 /**
@@ -63,7 +63,7 @@ public class ContractLedger implements Serializable {
 	
 	@Column(name = "SHARING_", length = 512)
 	@PropertyDef(label = "共享情况")
-	private String Sharing;
+	private String sharing;
 	
 	@Column(name = "MOBILE_NAME_")
 	@PropertyDef(label = "移动名称")
@@ -198,6 +198,7 @@ public class ContractLedger implements Serializable {
 	@Column(name = "RENT_PAYMENT_EFFECTIVE_DATE_")
 	@Temporal(TemporalType.DATE)
 	@PropertyDef(label = "租金支付有效日期")
+	@Generator(policy = CreatedDatePolicy.class)
 	private Date rentPaymentEffectiveDate;
 	
 	@Column(name = "EXPECTED_NEXT_PAYMENT_DATE_")
@@ -237,16 +238,6 @@ public class ContractLedger implements Serializable {
 	@PropertyDef(label = "选址支付信息备注")
 	private String locatePaymentInfoRemark;
 	
-	@Transient
-	private List<TestEntity> tes;
-
-	public List<TestEntity> getTes() {
-		return tes;
-	}
-
-	public void setTes(List<TestEntity> tes) {
-		this.tes = tes;
-	}
 
 	public String getId() {
 		return id;
@@ -313,11 +304,11 @@ public class ContractLedger implements Serializable {
 	}
 
 	public String getSharing() {
-		return Sharing;
+		return sharing;
 	}
 
 	public void setSharing(String sharing) {
-		Sharing = sharing;
+		this.sharing = sharing;
 	}
 
 	public String getMobileName() {

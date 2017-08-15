@@ -229,6 +229,7 @@
 		dsContractLedger.getData(&quot;#&quot;).remove();
 		updateAction.execute();
 	});
+	arg.processDefault = false;
 }
 
 </ClientEvent>
@@ -822,6 +823,8 @@ self.queryTimeout = window.setTimeout(function() {
     startRow:3
 });
 </ClientEvent>
+      <ClientEvent name="onUploadProgress" signature="self,arg,dsContractLedger">dsContractLedger.flushAsync();
+</ClientEvent>
       <Property name="fileResolver">importer.excelUploadFileProcessor#upload</Property>
       <Property name="parameter">
         <Entity>
@@ -829,6 +832,7 @@ self.queryTimeout = window.setTimeout(function() {
           <Property name="startRow">3</Property>
         </Entity>
       </Property>
+      <Property name="successMessage">数据导入成功</Property>
       <Filters/>
     </UploadAction>
   </View>
